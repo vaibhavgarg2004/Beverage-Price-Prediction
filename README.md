@@ -4,12 +4,12 @@ An interactive web application built with Streamlit that predicts the optimal ma
 
 ---
 
-<!-- ## 🌐 Live Website
-You can try the tool live here: **[Health Insurance Premium Predictor](https://vaibhav-project-premium-prediction.streamlit.app/)**
+## 🌐 Live Website
+You can try the tool live here: **[CodeX Beverage Price Prediction](https://vaibhav-project-beverage-price-prediction.streamlit.app/)**
 
 ---
 
-## 🎥 Presentation
+<!-- ## 🎥 Presentation
 Watch the full project presentation here: **[Health Insurance Premium Predictor Presentation](https://vaibhav-projects.my.canva.site/health-insurance-premium-prediction)**
 
 --- -->
