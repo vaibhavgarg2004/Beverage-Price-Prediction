@@ -10,7 +10,7 @@ You can try the tool live here: **[CodeX Beverage Price Prediction](https://vaib
 ---
 
 <!-- ## 🎥 Presentation
-Watch the full project presentation here: **[Health Insurance Premium Predictor Presentation](https://vaibhav-projects.my.canva.site/health-insurance-premium-prediction)**
+Watch the full project presentation here: **[CodeX Beverage Price Prediction Presentation](https://vaibhav-projects.my.canva.site/health-insurance-premium-prediction)**
 
 --- -->
 
