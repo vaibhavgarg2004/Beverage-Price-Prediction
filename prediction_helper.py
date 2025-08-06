@@ -91,7 +91,6 @@ def preprocess_input(input_dict):
         df['occupation_Student'] = 1
     elif input_dict['occupation'] == "Working Professional":
         df['occupation_Working Professional'] = 1
-    # Entrepreneur left without encoding if not in training
 
     if input_dict['current_brand'] == "Newcomer":
         df['current_brand_Newcomer'] = 1
@@ -124,10 +123,10 @@ def preprocess_input(input_dict):
 
 def predict(input_dict):
     label_map = {
-    0: '50-100',
-    1: '100-150',
-    2: '150-200',
-    3: '200-250'
+        0: '50-100',
+        1: '100-150',
+        2: '150-200',
+        3: '200-250'
     }
     input_df = preprocess_input(input_dict)
     prediction = model.predict(input_df)
