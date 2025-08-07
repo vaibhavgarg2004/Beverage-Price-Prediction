@@ -49,7 +49,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Add gap before the details line
+# Gap and Header
 st.markdown("<div style='margin-top:25px;'></div>", unsafe_allow_html=True)
 st.markdown("## 📋 Enter customer details below:")
 st.markdown("---")
@@ -58,68 +58,64 @@ st.markdown("---")
 # Inputs Layout
 # ---------------------------
 with st.container():
-    st.subheader("👤 Customer & Demographics")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        age = st.number_input('Age', min_value=18, step=1, max_value=100, value=28,
+        age = st.number_input('🎂 Age', min_value=18, step=1, max_value=100, value=28,
                               help="Enter the customer's age in years (must be 18 or above).")
     with col2:
-        gender = st.selectbox('Gender', ['Male', 'Female'],
+        gender = st.selectbox('⚧️ Gender', ['Male', 'Female'],
                               help="Select the customer's gender.")
     with col3:
-        zone = st.selectbox('Zone', ['Urban', 'Rural', 'Metro', 'Semi-Urban'],
+        zone = st.selectbox('🌍 Zone', ['Urban', 'Rural', 'Metro', 'Semi-Urban'],
                             help="Choose the location type where the customer resides.")
     with col4:
-        occupation = st.selectbox('Occupation', ['Working Professional', 'Student', 'Entrepreneur', 'Retired'],
+        occupation = st.selectbox('💼 Occupation', ['Working Professional', 'Student', 'Entrepreneur', 'Retired'],
                                   help="Select the customer's primary occupation.")
 
-    st.subheader("🛒 Purchase Behavior")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        income_levels = st.selectbox('Income Levels', 
+        income_levels = st.selectbox('💸 Income Levels', 
                                      ['<10L', '10L - 15L', '16L - 25L', '26L - 35L', '> 35L'],
                                      help="Customer's annual income range (in lakhs INR).")
     with col2:
-        consume_frequency = st.selectbox('Consume Frequency (Weekly)',
+        consume_frequency = st.selectbox('📆 Consume Frequency (Weekly)',
                                          ['0-2 times', '3-4 times', '5-7 times'],
                                          help="How many times the customer consumes the beverage per week.")
     with col3:
-        current_brand = st.selectbox('Current Brand', ['Established', 'Newcomer'],
+        current_brand = st.selectbox('🏷️ Current Brand', ['Established', 'Newcomer'],
                                      help="The brand type the customer currently prefers.")
     with col4:
-        preferable_consumption_size = st.selectbox('Preferable Consumption Size',
+        preferable_consumption_size = st.selectbox('📦 Preferable Consumption Size',
                                                    ['Small (250 ml)', 'Medium (500 ml)', 'Large (1 L)'],
                                                    help="The most preferred beverage pack size.")
 
-    st.subheader("🍹 Product Preferences")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        awareness_of_other_brands = st.selectbox('Awareness of Other Brands',
+        awareness_of_other_brands = st.selectbox('🔍 Awareness of Other Brands',
                                                  ['0 to 1', '2 to 4', 'above 4'],
                                                  help="Number of alternative beverage brands the customer is aware of.")
     with col2:
-        reasons_for_choosing_brands = st.selectbox('Reasons for Choosing Brands',
+        reasons_for_choosing_brands = st.selectbox('📊 Reasons for Choosing Brands',
                                                    ['Price', 'Quality', 'Availability', 'Brand Reputation'],
                                                    help="Main reason behind the customer's brand choice.")
     with col3:
-        flavor_preference = st.selectbox('Flavor Preference', ['Traditional', 'Exotic'],
+        flavor_preference = st.selectbox('🍊 Flavor Preference', ['Traditional', 'Exotic'],
                                          help="Preferred flavor profile of the beverage.")
     with col4:
-        purchase_channel = st.selectbox('Purchase Channel', ['Online', 'Retail Store'],
+        purchase_channel = st.selectbox('🛒 Purchase Channel', ['Online', 'Retail Store'],
                                         help="The channel where the customer usually buys the beverage.")
 
-    st.subheader("💡 Lifestyle & Other Factors")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        packaging_preference = st.selectbox('Packaging Preference',
+        packaging_preference = st.selectbox('📦 Packaging Preference',
                                             ['Simple', 'Premium', 'Eco-Friendly'],
                                             help="Type of beverage packaging preferred by the customer.")
     with col2:
-        health_concerns = st.selectbox('Health Concerns',
+        health_concerns = st.selectbox('💚 Health Concerns',
                                        ['Low (Not very concerned)', 'Medium (Moderately health-conscious)', 'High (Very health-conscious)'],
                                        help="Level of concern about health and nutrition.")
     with col3:
-        typical_consumption_situations = st.selectbox('Typical Consumption Situations',
+        typical_consumption_situations = st.selectbox('🕒 Typical Consumption Situations',
                                                       ['Active (eg. Sports, gym)', 'Social (eg. Parties)', 'Casual (eg. At home)'],
                                                       help="The most common situation where the beverage is consumed.")
 
@@ -159,8 +155,8 @@ if st.button("💰 Calculate Price Range", use_container_width=False):
         text-align: left;
         font-size: 18px;
         font-weight: bold;
-        max-width: 340px;       /* Limit width */
-        margin-top: 15px;       /* Space above */
+        max-width: 340px;
+        margin-top: 15px;
         ">
         💵 Estimated Price Range: ₹ {prediction}
     </div>
