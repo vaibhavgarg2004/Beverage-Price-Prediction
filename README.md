@@ -1,11 +1,11 @@
-# CodeX Beverage Price Prediction
+# Beverage Price Prediction
 
 An interactive web application built with Streamlit that predicts the optimal market price range for beverages based on customer demographics, preferences, and lifestyle choices. By leveraging a trained machine learning model, the app helps beverage companies quickly estimate price points for different customer segments.
 
 ---
 
 ## 🌐 Live Website
-You can try the tool live here: **[CodeX Beverage Price Prediction](https://vaibhav-project-beverage-price-prediction.streamlit.app/)**
+You can try the tool live here: **[Beverage Price Prediction](https://vaibhav-project-beverage-price-prediction.streamlit.app/)**
 
 ---
 
