@@ -9,10 +9,10 @@ You can try the tool live here: **[Beverage Price Prediction](https://vaibhav-pr
 
 ---
 
-<!-- ## 🎥 Presentation
-Watch the full project presentation here: **[CodeX Beverage Price Prediction Presentation](https://vaibhav-projects.my.canva.site/health-insurance-premium-prediction)**
+## 🎥 Presentation
+Watch the full project presentation here: **[Beverage Price Prediction Presentation](https://vaibhav-project.my.canva.site/beverage-price-prediction-presentation)**
 
---- -->
+---
 
 ## 🛠 Features  
 - Sleek, responsive Streamlit interface with custom styling 
