@@ -5,7 +5,7 @@ from prediction_helper import predict
 # Page Config
 # ---------------------------
 st.set_page_config(
-    page_title="CodeX Beverage: Price Prediction",
+    page_title="Beverage: Price Prediction",
     page_icon="🥤",
     layout="wide"
 )
@@ -45,7 +45,7 @@ st.markdown("""
 # ---------------------------
 st.markdown("""
 <div class="title-card">
-    <h1>🥤 CodeX Beverage Price Prediction</h1>
+    <h1>🥤 Beverage Price Prediction</h1>
 </div>
 """, unsafe_allow_html=True)
 
