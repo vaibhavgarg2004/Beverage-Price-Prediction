@@ -17,6 +17,8 @@ Watch the full project presentation here: **[Beverage Price Prediction Presentat
 ## 📊 MLflow Dashboard
 Explore the live MLflow dashboard here: **[Beverage Price Prediction Dashboard](https://dagshub.com/vaibhavgarg152004/mlflow-Beverage.mlflow/#/experiments/0)**
 
+---
+
 ## 🛠 Features  
 - Sleek, responsive Streamlit interface with custom styling 
 - Predicts beverage price ranges based on demographics & consumption patterns  
